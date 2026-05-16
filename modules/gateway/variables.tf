@@ -43,11 +43,6 @@ variable "max_connection" {
   default = 100
 }
 
-variable "seq_num" {
-  description = "A sequence number appended to the VPN gateway or network resource name to ensure uniqueness."
-  type        = number
-}
-
 variable "vpc_id" {
   description = "The ID of the VPC where the VPN gateway is deployed."
   type        = string
@@ -57,7 +52,6 @@ variable "vpc_id" {
 variable "region" {
   description = "The region where the VPN gateway and other resources are located. Example: 'ap-jakarta'."
   type        = string
-  default     = "ap-jakarta"
 }
 
 variable "vpn_gateways" {
