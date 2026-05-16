@@ -49,11 +49,6 @@ variable "vpc_id" {
   default = ""
 }
 
-variable "region" {
-  description = "The region where the VPN gateway and other resources are located. Example: 'ap-jakarta'."
-  type        = string
-}
-
 variable "vpn_gateways" {
   description = "A map of VPN gateways to be created for CCN (Cloud Connect Network). This should follow the structure of the `tencentcloud_vpn_gateway` resource."
   type        = any
