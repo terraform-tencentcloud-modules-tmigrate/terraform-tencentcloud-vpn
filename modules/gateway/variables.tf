@@ -17,6 +17,7 @@ variable "bandwidth" {
 variable "zone" {
   description = "The availability zone in which the VPN gateway is deployed. Example: 'ap-jakarta-1'."
   type        = string
+  default = null
 }
 
 variable "type" {
